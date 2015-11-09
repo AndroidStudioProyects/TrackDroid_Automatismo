@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TrackDroid_Automatismo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuración</string>
+</resources>

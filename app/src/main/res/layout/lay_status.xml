@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:background="@drawable/fondo_2">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar Estado"
+        android:textColor="@color/blanco"
+        android:background="@drawable/boton_selector"
+        android:id="@+id/btn_status"
+        android:layout_gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sensores Medidos"
+                android:textColor="@color/negro"
+                android:id="@+id/textView24"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.07"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/boton_dis" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor A0:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_A0"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_unidad_A0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor A1:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/text_A1"
+                    android:textColor="@color/blanco"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_unidad_A1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor A2:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/text_A2"
+                    android:textColor="@color/blanco"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_unidad_A2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor A3:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_A3"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/blanco"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad"
+                    android:id="@+id/text_unidad_A3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor A4:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_A4"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_unidad_A4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor A5:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_A5"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/text_unidad_A5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alarmas"
+                android:textColor="@color/negro"
+                android:id="@+id/textView25"
+                android:gravity="center"
+                android:layout_weight="0.10"
+                android:textSize="20dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/boton_dis" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:layout_weight="0.04"
+                android:id="@+id/nn"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Alarma 1"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Relay_0"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="2dp"
+                    android:background="@drawable/boton_press" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma 2"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Relay_1"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="2dp"
+                    android:background="@drawable/boton_selector" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma 3"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/boton_selector"
+                    android:id="@+id/Relay_2"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:padding="2dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma 4"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Relay_3"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:padding="2dp"
+                    android:background="@drawable/boton_press" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma 5"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Relay_4"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:padding="2dp"
+                    android:background="@drawable/boton_press" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma 6"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Relay_5"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:padding="2dp"
+                    android:background="@drawable/boton_press" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma 7"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Relay_6"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:padding="2dp"
+                    android:background="@drawable/boton_press" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alarma 8"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Relay_7"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:padding="2dp"
+                    android:background="@drawable/boton_press" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relays"
+                android:textColor="@color/negro"
+
+                android:id="@+id/textView26"
+                android:gravity="center"
+                android:layout_weight="0.10"
+                android:textSize="20dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/boton_dis" />
+
+            <GridLayout android:textColor="@color/blanco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:layout_weight="0.04"
+                android:id="@+id/gridLayout"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relay 1"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/boton_selector"
+                    android:id="@+id/Rele_1"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="2dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relay 2"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Rele_2"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="2dp"
+                    android:background="@drawable/boton_press" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relay 3"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/boton_selector"
+                    android:id="@+id/Rele_3"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:padding="2dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relay 4"
+                    android:background="@drawable/boton_selector"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/Rele_4"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:padding="2dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relay 5"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/boton_selector"
+                    android:id="@+id/Rele_5"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:padding="2dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relay 6"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/boton_selector"
+                    android:id="@+id/Rele_6"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:padding="2dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relay 7"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/boton_selector"
+                    android:id="@+id/Rele_7"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:padding="2dp" />
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
