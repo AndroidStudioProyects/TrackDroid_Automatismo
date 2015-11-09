@@ -17,7 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Lay_Status"></activity>
-        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Lay_Configuracion"></activity>
     </application>
 
