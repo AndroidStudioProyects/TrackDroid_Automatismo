@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:background="@drawable/fondo_2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escribir Memoria"
+                android:textColor="@color/negro"
+                android:id="@+id/textView24"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.07"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_margin="1dp"
+                android:background="@drawable/boton_dis" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dato 0:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView12" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_Dato0"
+                    android:textColor="@color/blanco"
+                    android:text="000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dato 1:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView14" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_Dato1"
+                    android:textColor="@color/blanco"
+                    android:layout_weight="1"
+                    android:text="111" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dato 2:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView16" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_Dato2"
+                    android:textColor="@color/blanco"
+                    android:layout_weight="1"
+                    android:text="222" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dato 3:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView18" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_Dato3"
+                    android:textColor="@color/blanco"
+                    android:layout_weight="1"
+                    android:text="333" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dato 4:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView20" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_Dato4"
+                    android:textColor="@color/blanco"
+                    android:layout_weight="1"
+                    android:text="444" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dato 5:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView22" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_Dato5"
+                    android:textColor="@color/blanco"
+                    android:layout_weight="1"
+                    android:text="555" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.07">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dato 6:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView34" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_Dato6"
+                    android:textColor="@color/blanco"
+                    android:layout_weight="1"
+                    android:text="666" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dato 7:"
+                    android:textColor="@color/blanco"
+                    android:id="@+id/textView36" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_Dato7"
+                    android:textColor="@color/blanco"
+                    android:layout_weight="1"
+                    android:text="777" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <Button
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="999"
+                    android:id="@+id/btn_999"
+                    android:layout_weight="0.55" />
+
+                <Button
+
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Enviar Datos"
+                    android:id="@+id/btn_Enviar" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="777"
+                    android:id="@+id/btn_777" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

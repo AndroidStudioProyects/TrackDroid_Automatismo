@@ -1,6 +1,5 @@
 package com.example.diego.trackdroid_automatismo;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,7 +7,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,7 +23,7 @@ import android.widget.Toast;
  */
 public class Lay_MainActivity extends AppCompatActivity {
     Button btn_R1,btn_R2,btn_R3,btn_R4,btn_R5,btn_R6,btn_R7;
-    Button btn_Status;
+    Button btn_Status,btn_EnviarDatos;
     public static TextView txtV_R1,txtV_R2,txtV_R3,txtV_R4,txtV_R5,txtV_R6,txtV_R7;
     TextView text_mensajes;
     EditText edit_IP,edit_Puerto;
@@ -202,11 +200,25 @@ public class Lay_MainActivity extends AppCompatActivity {
 
 
         btn_Status.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) { String IP = edit_IP.getText().toString();
+            @Override public void onClick(View v) {
+                String IP = edit_IP.getText().toString();
                 int Puerto = Integer.parseInt(edit_Puerto.getText().toString());
                 Intent intent = new Intent(Lay_MainActivity.this, Lay_Status.class);
                 intent.putExtra("ip", IP); intent.putExtra("puerto", Puerto);
                 startActivity(intent); } });
+
+        btn_EnviarDatos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String IP = edit_IP.getText().toString();
+                int Puerto = Integer.parseInt(edit_Puerto.getText().toString());
+                Intent intent=new Intent(Lay_MainActivity.this,Lay_EnviarDatos.class);
+                intent.putExtra("ip", IP); intent.putExtra("puerto", Puerto);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     private void LevantarXML() {
@@ -220,6 +232,7 @@ public class Lay_MainActivity extends AppCompatActivity {
         btn_R7=(Button)findViewById(R.id.layMA_btn_R7);
 
         btn_Status=(Button)findViewById(R.id.layMA_btn_Status);
+        btn_EnviarDatos=(Button)findViewById(R.id.btn_lay_EnviarDatos);
 
 
         txtV_R1=(TextView)findViewById(R.id.layMA_txtV_R1);

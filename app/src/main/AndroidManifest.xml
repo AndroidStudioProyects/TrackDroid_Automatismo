@@ -12,12 +12,14 @@
             android:label="TRACKDROID" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Lay_Status"></activity>
         <activity android:name=".Lay_Configuracion"></activity>
+        <activity android:name=".Lay_EnviarDatos"></activity>
+
+
     </application>
 
 </manifest>
